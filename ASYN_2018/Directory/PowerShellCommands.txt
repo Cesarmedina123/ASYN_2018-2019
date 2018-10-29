@@ -1,0 +1,5 @@
+# Power-shell commands
+
+Set-Location -Path E:\A_Syn_Project
+
+Get-ChildItem -Filter "*_SummaryTable*" -Recurse|Rename-Item -NewName {$_.name -replace '_SummaryTable',''}
